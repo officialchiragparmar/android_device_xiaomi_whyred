@@ -478,6 +478,12 @@ on property:sys.boot_completed=1
     #WDSP FW boot sysfs node used by STHAL
     chown media audio /sys/kernel/wdsp0/boot
     chown media audio /sys/kernel/wcd_cpe0/fw_name
+    write /sys/devices/platform/kcal_ctrl.0/kcal "250 250 255"
+    write /sys/devices/platform/kcal_ctrl.0/kcal_sat 285
+    write /sys/devices/platform/kcal_ctrl.0/kcal_val 245
+    write /sys/devices/platform/kcal_ctrl.0/kcal_cont 264
+    write /proc/sys/vm/dirty_ratio 10
+    write /proc/sys/vm/dirty_background_ratio 80
 
 on property:persist.vendor.radio.atfwd.start=false
     stop vendor.atfwd
