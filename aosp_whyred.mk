@@ -49,8 +49,6 @@ BUILD_FINGERPRINT := xiaomi/whyred/whyred:8.1.0/OPM1.171019.011/V9.5.11.0.OEIMIF
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.build.fingerprint=xiaomi/whyred/whyred:8.1.0/OPM1.171019.011/V9.5.11.0.OEIMIFA:user/release-keys
 
-BUILD_FINGERPRINT := "google/walleye/walleye:8.1.0/OPM1.171019.021/4565141:user/release-keys"
-
 TARGET_VENDOR := Xiaomi
 
 TARGET_GAPPS_ARCH := arm64
