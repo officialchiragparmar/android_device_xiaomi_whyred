@@ -54,3 +54,6 @@ TARGET_VENDOR := Xiaomi
 TARGET_GAPPS_ARCH := arm64
 CUSTOM_BUILD_TYPE := HOMEMADE
 TARGET_BOOT_ANIMATION_RES := 1080
+
+#$(call inherit-product, vendor/gapps/config.mk)
+
