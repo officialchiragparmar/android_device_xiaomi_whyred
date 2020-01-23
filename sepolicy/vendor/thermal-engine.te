@@ -1,3 +1,6 @@
 #============= thermal-engine ==============
 allow thermal-engine property_socket:sock_file write;
 set_prop(thermal-engine, thermal_prop);
+
+allow thermal-engine sysfs:dir { read };
+allow thermel-engine vendor_data_file:dir { read };
